@@ -1,0 +1,17 @@
+# 统一文本文件使用 LF 换行（即使在 Windows）
+* text=auto eol=lf
+
+# 明确二进制文件（避免 Git 尝试转换）
+*.png binary
+*.jpg binary
+*.gif binary
+*.zip binary
+*.exe binary
+*.dll binary
+*.so binary
+*.dylib binary
+
+# 特定文件强制 LF（如 shell 脚本必须 LF）
+*.sh text eol=lf
+*.py text eol=lf
+Makefile text eol=lf
